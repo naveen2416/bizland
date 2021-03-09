@@ -1,0 +1,62 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+/*banner*/
+.banner{
+    background-image: url('../css/image/hero-bg.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.banner .white-overlay{
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}    
+.banner .cointainer{
+    height: 100vh;
+}
+.banner .f-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+.banner .f-container1{
+    flex-direction: row;
+}
+h1{
+    font-size: 28px;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+.banner h1 span{
+    color: #106EEA;
+}
+p{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.banner .f-container2{
+    flex-direction: row;
+}
+@media (min-width:576px){
+
+}
+@media (min-width:768px){
+    
+}
+@media (min-width:992px){
+    
+}
+@media (min-width:1200px){
+    
+}
+@media (min-width:1400px){
+    
+}
