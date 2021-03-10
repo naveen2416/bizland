@@ -18,45 +18,206 @@ body{
 }    
 .banner .cointainer{
     height: 100vh;
+    width: 100%;
+    margin: 0 auto;
 }
 .banner .f-container{
-    display: flex;
-    align-items: center;
-    position: relative;
     height: 100vh;
-}
-.banner .f-container1{
-    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 0 12px;
 }
 h1{
     font-size: 28px;
-    padding-bottom: 12px;
-    font-weight: 700;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    margin: -30px 0;
 }
 .banner h1 span{
     color: #106EEA;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
+    padding-bottom: 11px;
+    font-weight: 400;
+    color: #555555;
     line-height: 24px;
-    margin-bottom: 30px;
 }
-
-.banner .f-container2{
-    flex-direction: row;
+.banner .f-item2{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+.banner .primary-btn{
+    text-decoration: none;
+    color: white;
+    background: #106EEA;
+    padding: 10px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.banner .secondary-btn {
+    text-decoration: none;
+    padding-left: 25px;
+    color: #222222;
+    font-weight: 600;
+    font-size: 14px;
+}
+.banner i{
+    font-size: 32px;
+    padding-right: 8px;
+    color: #106EEA; 
+}
+.highlight{
+    width: 100%;
+    height: 100vh;
+}
+.highlights .container{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.highlights .f-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.highlights .f-item{
+    flex-basis: 65%;
+    margin-top: 35px;
+    padding: 0px 50px 20px 40px;
+    border: 2px #106eea42 solid;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 5px;
+}
+.highlights .icon{
+    color: #106EEA;
+    font-size: 45px;
+    padding: 30px 0px 25px 0px;
+}
+.highlights h1{
+    font-size: 17px;
+    padding: 6px 0px 25px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+.highlights p{
+    font-size: 15px;
+    padding: 0px 0px 0px 0px;
+    word-spacing: 1px;
+    color: black;
+    line-height: 23px;
 }
 @media (min-width:576px){
-
+/*banner*/
+.banner .container{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+.highlights .container{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
 }
 @media (min-width:768px){
-    
-}
+    /*banner*/
+    .banner .container{
+        height: 100vh;
+        margin: 0 auto;
+        width: 720px;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        margin: -20px 0;
+    }
+    p{
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+    .banner .secondary-btn {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .highlights .container{
+        width: 720px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    .highlights .f-item{
+        flex-basis: 33%;
+    }
+    .highlights .icon{
+        padding: 30px 0px 5px 0px;
+    }
+    .highlights h1{
+        padding: 0px 0px 0px 0px;
+    }
+    .highlights p{
+        padding: 0px 0px 0px 0px;
+        line-height: 25px;
+        color: black;
+        font-weight: 500;
+    }
+    }
 @media (min-width:992px){
-    
-}
+    /*banner*/
+    .banner .container{
+        height: 100vh;
+        margin: 0 auto;
+        width: 960px;
+    }
+    .highlights .container{
+        width: 960px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    .highlights .f-item{
+        flex-basis: 13%;
+    }
+    }
 @media (min-width:1200px){
-    
-}
+    /*banner*/    
+    .banner .container{
+        height: 100vh;
+        margin: 0 auto;
+        width: 1140px;
+    }
+    .highlights .container{
+        width: 1140px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    .highlights .f-item{
+        flex-basis: 14%;
+    }
+    }
 @media (min-width:1400px){
-    
+     /*banner*/    
+    .banner .container{
+        height: 100vh;
+        margin: 0 auto;
+        width: 1320px;
+    }
+    .highlights .container{
+        width: 1320px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    .highlights .f-item{
+        flex-basis: 16%;
+    }
 }
